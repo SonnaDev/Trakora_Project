@@ -5,6 +5,7 @@ function Card({ label, value, delta, deltaPositivo}) {
         <div className="card-value">{value}</div>
         {delta && (
             <div className= {deltaPositivo ?  'card-delta positivo' : 'card-delta negativo'}>
+                {delta}
             </div>
         )}
 
@@ -56,7 +57,36 @@ function Dashboard () {
                     <div className="project">
                         <span className="fbar">Progetto C</span>
                         <div className="track-bar" style={{width: '30%', background: '#854F0B'}}></div>
-                        <span className="hr-bar">15h</span>
+                        <span className="hr-bar">6h</span>
+                    </div>
+                    <div className="project">
+                        <span className="fbar">Interno</span>
+                        <div className="track-bar" style={{width: '25%', background: '#888780'}}></div>
+                        <span className="hr-bar">6h</span>
+                    </div>
+                </div>
+                <div className="row">
+                    <h3 className="row-title">Attività recenti</h3>
+                    <div className="activity-el">
+                        <div className="dot" style={{ background : '#185FA5'}}></div>
+                        <div>
+                            <div className="activity-text">Ore rendiconte - Progetto A</div>
+                            <div className="activity-time">Oggi, 09:14</div>
+                        </div>
+                    </div>
+                    <div className="activity-el">
+                        <div className="dot" style={{ background : '#3B6D11'}}></div>
+                        <div>
+                            <div className="activity-text">Ferie approvate - 20-22 mar</div>
+                            <div className="activity-time">ieri, 16:30</div>
+                        </div>
+                    </div>
+                    <div className="activity-el">
+                        <div className="dot" style={{ background : '#888780'}}></div>
+                        <div>
+                            <div className="activity-text">Report mensile</div>
+                            <div className="activity-time">1 mar, 10:25</div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './nav'
 import Dashboard from './pages/Dashboard.jsx'
+// import Ore from './pages/Ore.jsx'
 import './App.css'
 
 

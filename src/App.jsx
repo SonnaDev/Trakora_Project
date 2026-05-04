@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './nav'
 import Dashboard from './pages/Dashboard.jsx'
-// import Ore from './pages/Ore.jsx'
+import Ore from './pages/Ore.jsx'
 import './App.css'
 
 
 
 
 // function Dashboard()    { return <h2>Dashboard</h2>; }
-function Ore()          { return <h2>Ore Lavorative</h2>; }
+// function Ore()          { return <h2>Ore Lavorative</h2>; }
 function Permessi()     { return <h2>Permessi e Ferie</h2>; }
 function Report()       { return <h2>Report</h2>; }
 
@@ -19,6 +19,7 @@ function App() {
        <BrowserRouter>
         <div className="app-layout">
           <Nav />
+          <Ore />
           <main className="contents">
             <Routes>
               <Route path="/"            element={<Dashboard />} />

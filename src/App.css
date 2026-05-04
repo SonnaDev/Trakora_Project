@@ -257,3 +257,141 @@ body {
   margin-top: 2px;
   color: #999;
 }
+
+/* --- Pagina Ore --- */
+.ore-page {
+  max-width: 900px;
+}
+
+.ore-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ore-form {
+  background: #ffffff;
+  border: 1px solid #e5e5e3;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.ore-storico {
+  background: #ffffff;
+  border: 1px solid #e5e5e3;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #e5e5e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1a1a1a;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #1a56db;
+}
+
+.errore {
+  font-size: 11px;
+  color: #A32D2D;
+  margin-top: 3px;
+}
+
+.banner-successo {
+  background: #EAF3DE;
+  color: #27500A;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e3;
+}
+
+.ore-totali {
+  font-size: 13px;
+  color: #666;
+}
+
+.btn-salva {
+  padding: 8px 20px;
+  font-size: 13px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-salva:hover {
+  background: #333;
+}
+
+.storico-vuoto {
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.storico-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.storico-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  color: #999;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e5e3;
+}
+
+.storico-table td {
+  padding: 9px 10px;
+  color: #444;
+  border-bottom: 1px solid #f0f0ee;
+}
+
+.storico-table tr:last-child td {
+  border-bottom: none;
+}
